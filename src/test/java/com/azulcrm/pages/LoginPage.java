@@ -21,6 +21,11 @@ public class LoginPage {
     @FindBy(css = "input[value='Log In']")
     public WebElement submit;
 
+    @FindBy(css = "#USER_REMEMBER")
+    public WebElement rememberMeCheckBox;
+
+    @FindBy(className = "errortext")
+    public WebElement invalidCredentialText;
 
     public void login(String userNameStr, String passwordStr) {
         username.sendKeys(userNameStr);
