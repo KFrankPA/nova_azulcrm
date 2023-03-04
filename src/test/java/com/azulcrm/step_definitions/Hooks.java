@@ -38,6 +38,8 @@ public class Hooks {
     @After
     public void teardownMethod(Scenario scenario){
 
+        Driver.getDriver().manage().deleteAllCookies();
+
         if (scenario.isFailed()) {
 
             byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
