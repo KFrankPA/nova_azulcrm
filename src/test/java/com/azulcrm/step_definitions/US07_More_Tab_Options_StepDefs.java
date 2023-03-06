@@ -17,7 +17,7 @@ public class US07_More_Tab_Options_StepDefs extends BasePage {
 
     @Then("verify the users see following 4 options")
     public void verifyTheUsersSeeFollowingOptions(List<String> expectedOptions) {
-        List<String> actualOptions = BrowserUtils.getElementsText();
+        List<String> actualOptions = BrowserUtils.getElementsText(topMenuMoreOptions);
         Assert.assertEquals(expectedOptions, actualOptions);
     }
 }

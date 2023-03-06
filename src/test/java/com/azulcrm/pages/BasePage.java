@@ -45,8 +45,8 @@ public abstract class BasePage {
     @FindBy(xpath = "//span[contains(@class,'feed-add-post-form-link')]/span")
     public List<WebElement> topMenuOptions;
 
-    @FindBy(xpath = "//span[@class='menu-popup-item-text']")
-    public WebElement.
+    @FindBy(css = ".menu-popup-item-text")
+    public List<WebElement> topMenuMoreOptions;
 
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
