@@ -42,6 +42,15 @@ public abstract class BasePage {
     @FindBy(xpath = "(//div[@class='b24-app-block-content'])[2]/a/span[contains(@class,'b24-app-icon b24-app-icon')]/following-sibling::span")
     public List<WebElement> mobileAppOptions;
 
+    @FindBy(xpath = "//a[@title='Chat and Calls']")
+    public WebElement leftMenuBtn_Chat_and_Calls;
+
+    @FindBy(css = "span[id='user-name']")
+    public WebElement bnt_User_Profile;
+
+    @FindBy(xpath = "//span[.='My Profile']")
+    public WebElement userProfile_dropdownOption_MyProfile;
+
     @FindBy(xpath = "//span[contains(@class,'feed-add-post-form-link')]/span")
     public List<WebElement> topMenuOptions;
 
@@ -51,7 +60,6 @@ public abstract class BasePage {
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
 
     public void topMenuOptionClick(String menuOption){
 
