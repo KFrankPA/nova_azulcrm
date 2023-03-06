@@ -4,7 +4,7 @@ import com.azulcrm.pages.LoginPage;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
-public class RememberMe_StepDef {
+public class US02_RememberMe_StepDefs {
    LoginPage loginPage = new LoginPage();
 
 
