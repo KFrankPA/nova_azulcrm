@@ -21,7 +21,7 @@ public class LoginPage {
     @FindBy(css = "input[value='Log In']")
     public WebElement submit;
 
-    @FindBy(xpath="label[@for='USER_REMEMBER']")
+    @FindBy(xpath="//label[@for='USER_REMEMBER']")
     public WebElement rememberMeText;
 
     @FindBy(css = "#USER_REMEMBER")
