@@ -1,4 +1,3 @@
-@wip1
 Feature: As a user, I should be able to access the Chat and Calls module
 
 
@@ -13,6 +12,7 @@ Feature: As a user, I should be able to access the Chat and Calls module
       | Notifications |
       | Settings      |
       | Active Stream |
+
 
     Examples:
       | userType       |
