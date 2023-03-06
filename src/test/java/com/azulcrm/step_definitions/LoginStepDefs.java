@@ -12,7 +12,8 @@ import org.openqa.selenium.By;
 
 public class LoginStepDefs {
 
-    LoginPage loginPage=new LoginPage();
+    LoginPage loginPage = new LoginPage();
+
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
         System.out.println("Login to app in Before method");
@@ -21,10 +22,10 @@ public class LoginStepDefs {
     @Given("the user with {string} enters valid username and password and click the login button")
     public void the_user_logged_in_as(String userType) {
         //based on input enter that user information
-        String username =null;
-        String password =null;
+        String username = null;
+        String password = null;
 
-        switch (userType.toLowerCase()){
+        switch (userType.toLowerCase()) {
             case "hr_user":
                 username = ConfigurationReader.getProperty("hr_user");
                 password = ConfigurationReader.getProperty("hr_password");
@@ -85,12 +86,12 @@ public class LoginStepDefs {
         }
 
         //send username and password and login
-        new LoginPage().login(username,password);
+        new LoginPage().login(username, password);
     }
 
     @Given("the user enters valid username as {string} and valid password as {string}")
     public void the_user_logged_in_with_username_as_and_password_as(String username, String password) {
-      loginPage.login(username,password);
+        loginPage.login(username, password);
     }
 
 
@@ -102,18 +103,21 @@ public class LoginStepDefs {
 
     @Given("the user enters invalid {string} or {string} and click the login button")
     public void theUserEntersInvalidOrAndClickTheLoginButton(String username, String password) {
-        if (username.equals("invalid_user")){
+        if (username.equals("invalid_user")) {
             username = ConfigurationReader.getProperty("invalid_user");
         }
-        if (password.equals("invalid_password")){
+        if (password.equals("invalid_password")) {
             password = ConfigurationReader.getProperty("invalid_password");
         }
-        loginPage.login(username,password);
+        loginPage.login(username, password);
     }
 
     @Then("users see {string} on the page")
     public void usersSeeOnThePage(String expectedText) {
         String actualText = loginPage.invalidCredentialText.getText();
-        Assert.assertEquals(expectedText,actualText);
+        Assert.assertEquals(expectedText, actualText);
     }
+
+
+
 }

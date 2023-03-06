@@ -4,6 +4,8 @@ Feature: As a user, I should be able to log in to the with valid credentials
   Background: User is already in the log in page
     Given the user is on the login page
 
+
+
   @all
   Scenario Outline: Verify user login with valid credentials
     Given the user with "<userType>" enters valid username and password and click the login button
@@ -47,3 +49,5 @@ Feature: As a user, I should be able to log in to the with valid credentials
       | hr_user      | invalid_password |
       | invalid_user | hd_password      |
       | invalid_user | invalid_password |
+
+
