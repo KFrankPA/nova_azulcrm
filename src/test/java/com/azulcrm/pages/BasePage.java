@@ -5,6 +5,7 @@ import com.azulcrm.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
 
 public abstract class BasePage {
@@ -20,6 +21,7 @@ public abstract class BasePage {
 
     @FindBy(id = "left-menu-list")
     public List<WebElement> leftMenu;
+
 
     @FindBy(id = "left-menu-more-btn")
     public WebElement moreLeftMenuBtn;
@@ -42,12 +44,19 @@ public abstract class BasePage {
     @FindBy(xpath = "(//div[@class='b24-app-block-content'])[2]/a/span[contains(@class,'b24-app-icon b24-app-icon')]/following-sibling::span")
     public List<WebElement> mobileAppOptions;
 
+    @FindBy(xpath = "//a[@title='Chat and Calls']")
+    public WebElement leftMenuBtn_Chat_and_Calls;
+
+    @FindBy(css = "span[id='user-name']")
+    public WebElement bnt_User_Profile;
+
+    @FindBy(xpath = "//span[.='My Profile']")
+    public WebElement userProfile_dropdownOption_MyProfile;
 
 
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
 
 
 }
