@@ -33,6 +33,16 @@ public abstract class BasePage {
     @FindBy(id = "bx-help-block")
     public WebElement help;
 
+    @FindBy(xpath = "//div[.='Mobile application']")
+    public WebElement mobileAppBlock;
+
+    @FindBy(xpath = "//div[.='Desktop client']")
+    public WebElement desktopClientBlock;
+
+    @FindBy(xpath = "(//div[@class='b24-app-block-content'])[2]/a/span[contains(@class,'b24-app-icon b24-app-icon')]/following-sibling::span")
+    public List<WebElement> mobileAppOptions;
+
+
 
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
