@@ -42,6 +42,9 @@ public abstract class BasePage {
     @FindBy(xpath = "(//div[@class='b24-app-block-content'])[2]/a/span[contains(@class,'b24-app-icon b24-app-icon')]/following-sibling::span")
     public List<WebElement> mobileAppOptions;
 
+    @FindBy(xpath = "//span[normalize-space()='Time and Reports']")
+    public WebElement TimeAndReports;
+
 
 
 
