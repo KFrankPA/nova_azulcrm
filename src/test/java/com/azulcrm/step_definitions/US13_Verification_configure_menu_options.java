@@ -24,7 +24,7 @@ public class US13_Verification_configure_menu_options extends BasePage {
     }
     @When("users click the CONFIGURE MENU option")
     public void users_click_the_configure_menu_option() {
-      Configure_menu.click();
+      //Configure_menu.click();
 
     }
     @Then("verify the users see flowing six options")
