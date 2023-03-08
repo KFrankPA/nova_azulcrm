@@ -70,4 +70,7 @@ public abstract class BasePage {
         }
     }
 
+    @FindBy(xpath = "//a[@title='Company']")
+    public WebElement companyMenuButton;
+
 }
