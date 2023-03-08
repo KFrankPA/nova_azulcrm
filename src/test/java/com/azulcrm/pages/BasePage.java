@@ -72,7 +72,7 @@ public abstract class BasePage {
 
 
     @FindBy(xpath = "//a[@title='Drive']")
-    public WebElement driveModule;
+    public static WebElement driveModule;
 
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -91,6 +91,6 @@ public abstract class BasePage {
     public WebElement companyMenuButton;
 
     @FindBy(xpath="//span[@class='main-buttons-item-text-title']")
-    public List<WebElement> options_drive_header;
+    public static List<WebElement> options_drive_header;
 
 }
