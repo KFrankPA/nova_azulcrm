@@ -14,7 +14,7 @@ Feature: As a user, I want to access my profile page.
       | Drive         |
       | Tasks         |
       | Calendar      |
-      | conversations |
+      | Conversations |
 
 
     Examples:
