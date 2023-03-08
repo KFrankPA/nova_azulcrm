@@ -1,3 +1,4 @@
+@regression
 @more_tab_options
 Feature: As a user, I should be able to see all the options under the MORE tab on the homepage
 

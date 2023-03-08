@@ -1,3 +1,4 @@
+@regression
 @mobile_app_options
 Feature: As a user, I want to see mobile app options to download.
 
