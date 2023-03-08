@@ -1,4 +1,4 @@
-@Drive
+@Regression
 Feature: As a user, I want to access the Drive page.
 
   Background:
