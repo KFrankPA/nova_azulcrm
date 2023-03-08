@@ -21,16 +21,8 @@ public class US09_ProfilePage_StepDefs extends BasePage {
         List<String> actualOptions = BrowserUtils.getElementsText(myProfilePage.profileModuleOptions);
         System.out.println(expectedOptions);
         System.out.println(actualOptions);
-        try {
+
             Assert.assertEquals(expectedOptions, actualOptions);
-        } catch (AssertionError e) {
-            e.printStackTrace();
-            System.out.println("User was able to see 5 options but assertion failed because " +
-                    "actual title test 'Conversations' " +
-                    "does not equal " +
-                    "expected result 'conversations'");
 
-
-        }
     }
 }
