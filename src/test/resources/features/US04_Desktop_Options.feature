@@ -9,8 +9,8 @@ Feature: As a user, I should be able to see desktop options to download.
     When user puts correct password and login to sign in
     Then verify the users sees desktop apps
 
-      | Mac OS  |
-      | Windows |
-      | Linux   |
+      | MAC OS  |
+      | WINDOWS |
+      | LINUX   |
 
 

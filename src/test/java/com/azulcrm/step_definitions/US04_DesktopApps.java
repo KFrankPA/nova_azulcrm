@@ -24,7 +24,7 @@ public class US04_DesktopApps {
     public void verifyTheUsersSeesDesktopApps(List<String> desktopAppsExpected) {
 
         List <String> actualValue = getTxt(employees.desktopApps);
-        Assert.assertTrue(actualValue.equals(desktopAppsExpected));
+        Assert.assertEquals(actualValue,desktopAppsExpected);
 
 
     }
