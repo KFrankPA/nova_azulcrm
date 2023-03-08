@@ -28,16 +28,6 @@ public class US11_TimeAndReports_StepDefs extends BasePage {
         loginPage.submit.click();
     }
 
-    @Given("click the login button")
-    public void click_the_login_button() {
-        loginPage.submit.click();
-    }
-
-    @Given("Given users are on the homepage")
-    public void given_users_are_on_the_homepage() {
-        Assert.assertTrue(Driver.getDriver().getTitle().contains("Portal"));
-
-    }
 
     @When("users click the Time and Reports module")
     public void users_click_the_time_and_reports_module() {
@@ -53,7 +43,7 @@ public class US11_TimeAndReports_StepDefs extends BasePage {
             Assert.assertEquals(expectedOptions, actualOptions);
         } catch (AssertionError e) {
             e.printStackTrace();
-            System.out.println("Have used tryCatch block assertion failed because " + "actual result 3rd tab is 'BITRIX24.Time ' " + "" +
+            System.out.println("Have used tryCatch block, because assertion is failed  " + "actual result 3rd tab is 'BITRIX24.Time ' " + "" +
                     "does not equal " + "expected result 'Bitrix24.Time'");
 
         }
