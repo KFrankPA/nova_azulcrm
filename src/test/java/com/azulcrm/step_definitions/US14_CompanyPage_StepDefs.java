@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class US14_CompanyPage_StepDefs extends BasePage {
+public class US14_CompanyPage_StepDefs {
 
     CompanyPage companyPage = new CompanyPage();
     @When("users click the Company module")
@@ -24,7 +24,7 @@ public class US14_CompanyPage_StepDefs extends BasePage {
 
         */
 
-        companyMenuButton.click();
+        companyPage.companyMenuButton.click();
         BrowserUtils.sleep(3);
     }
     @Then("verify the users see following Company options:")
