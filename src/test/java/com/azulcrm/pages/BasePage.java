@@ -5,6 +5,7 @@ import com.azulcrm.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import java.util.List;
 
 public abstract class BasePage {
@@ -61,10 +62,10 @@ public abstract class BasePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    public void topMenuOptionClick(String menuOption){
+    public void topMenuOptionClick(String menuOption) {
 
         for (WebElement topMenuOption : topMenuOptions) {
-            if (topMenuOption.getText().equals(menuOption)){
+            if (topMenuOption.getText().equals(menuOption)) {
                 topMenuOption.click();
             }
         }
@@ -73,4 +74,6 @@ public abstract class BasePage {
     @FindBy(xpath = "//a[@title='Company']")
     public WebElement companyMenuButton;
 
+    @FindBy(xpath = "//span[normalize-space()='Time and Reports']")
+    public WebElement TimeAndReports;
 }
