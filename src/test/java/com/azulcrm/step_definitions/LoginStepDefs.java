@@ -95,7 +95,6 @@ public class LoginStepDefs {
         loginPage.login(username, password);
     }
 
-
     @Then("verify the user should be at the home page")
     public void verifyTheUserShouldBeAtTheHomePage() {
         String expectedTitle = "Portal";
