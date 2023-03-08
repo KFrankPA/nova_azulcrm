@@ -8,16 +8,16 @@ import org.junit.Assert;
 
 import java.util.List;
 
-public class US07_More_Tab_Options_StepDefs extends BasePage {
+public class US07_More_Tab_Options_StepDefs {
 
     @When("user clicks the {string} tab")
     public void userClicksTheTab(String topMenuOption) {
-        topMenuOptionClick(topMenuOption);
+        BasePage.topMenuOptionClick(topMenuOption);
     }
 
     @Then("verify the users see following 4 options")
     public void verifyTheUsersSeeFollowingOptions(List<String> expectedOptions) {
-        List<String> actualOptions = BrowserUtils.getElementsText(topMenuMoreOptions);
+        List<String> actualOptions = BrowserUtils.getElementsText(BasePage.topMenuMoreOptions);
         Assert.assertEquals(expectedOptions, actualOptions);
     }
 }

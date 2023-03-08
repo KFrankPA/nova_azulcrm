@@ -12,14 +12,14 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class US08_Chat_And_Calls_StepDefs extends BasePage {
+public class US08_Chat_And_Calls_StepDefs {
 
     ChatAndCallsPage chatAndCallsPage = new ChatAndCallsPage();
 
     @When("users click the CHAT and Calls module")
     public void users_click_the_chat_and_calls_module() {
 
-        super.leftMenuBtn_Chat_and_Calls.click();
+        chatAndCallsPage.leftMenuBtn_Chat_and_Calls.click();
     }
 
     @Then("verify the users see flowing options:")
