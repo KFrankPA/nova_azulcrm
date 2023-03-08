@@ -7,15 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class DrivePage extends BasePage{
+public class DrivePage extends BasePage {
 
     public DrivePage() {
         PageFactory.initElements(Driver.getDriver(), this);
 
-    }
-        @FindBy(xpath="//span[@class=\"main-buttons-item-text-title\"]")
-        public List<WebElement> options_header;
-
 
     }
 
+}
