@@ -30,6 +30,9 @@ public abstract class BasePage {
     @FindBy(id = "user-block")
     public WebElement userBlock;
 
+    @FindBy(xpath = "//a[.='Log out']")
+    public WebElement logOutOpt;
+
     @FindBy(id = "bx-help-block")
     public WebElement help;
 
@@ -69,5 +72,8 @@ public abstract class BasePage {
             }
         }
     }
+
+    @FindBy(xpath = "//a[@title='Company']")
+    public WebElement companyMenuButton;
 
 }
