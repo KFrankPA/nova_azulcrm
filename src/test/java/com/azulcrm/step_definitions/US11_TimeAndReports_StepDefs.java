@@ -16,7 +16,7 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class US11_TimeAndReports_StepDefs extends BasePage {
+public class US11_TimeAndReports_StepDefs{
 
     TimeAndReport timeAndReport = new TimeAndReport();
     LoginPage loginPage = new LoginPage();
@@ -31,14 +31,14 @@ public class US11_TimeAndReports_StepDefs extends BasePage {
 
     @When("users click the Time and Reports module")
     public void users_click_the_time_and_reports_module() {
-        TimeAndReports.click();
+        timeAndReport.TimeAndReports.click();
 
 
     }
 
     @Then("verify the users see flowing 5 options")
     public void verify_the_users_see_flowing_5_options(List<String> expectedOptions) {
-        List<String> actualOptions = BrowserUtils.getElementsText(timeAndReport.timeAndReport);
+        List<String> actualOptions = BrowserUtils.getElementsText(timeAndReport.fiveModule);
         try {
             Assert.assertEquals(expectedOptions, actualOptions);
         } catch (AssertionError e) {

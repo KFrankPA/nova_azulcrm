@@ -77,6 +77,5 @@ public abstract class BasePage {
     @FindBy(xpath = "//a[@title='Company']")
     public WebElement companyMenuButton;
 
-    @FindBy(xpath = "//span[normalize-space()='Time and Reports']")
-    public WebElement TimeAndReports;
+
 }

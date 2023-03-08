@@ -7,12 +7,15 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class TimeAndReport {
+public class TimeAndReport{
 
     public TimeAndReport() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    @FindBy(xpath = "//span[normalize-space()='Time and Reports']")
+    public WebElement TimeAndReports;
     @FindBy(xpath = "//span[@class='main-buttons-item-text-title']")
-    public List<WebElement> timeAndReport;
+    public List<WebElement> fiveModule;
+
 }
