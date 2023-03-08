@@ -16,7 +16,8 @@ public class LoginStepDefs {
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
-        System.out.println("Login to app in Before method");
+        //Link to Login page is in our HOOKS in Before method
+        System.out.println("Link to Login page is in our HOOKS in Before method");
     }
 
     @Given("the user with {string} enters valid username and password and click the login button")
