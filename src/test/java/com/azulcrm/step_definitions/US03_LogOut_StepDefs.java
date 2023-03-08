@@ -9,7 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class US03_LogOut_StepDefs extends BasePage {
+public class US03_LogOut_StepDefs {
 
 
     LoginPage loginPage = new LoginPage();
@@ -58,13 +58,13 @@ public class US03_LogOut_StepDefs extends BasePage {
     }
     @When("users click the user profile name")
     public void users_click_the_user_profile_name() {
-        userBlock.click();
+        BasePage.userBlock.click();
 
 
     }
     @When("users select the {string} option")
     public void users_select_the_option(String string) {
-        logOutOpt.click();
+        BasePage.logOutOpt.click();
 
     }
     @Then("verify the user back to the login page")
