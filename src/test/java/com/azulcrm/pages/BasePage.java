@@ -1,5 +1,15 @@
 package com.azulcrm.pages;
 
+import com.azulcrm.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
+
+
+
+
 
 import com.azulcrm.utilities.Driver;
 import org.openqa.selenium.WebElement;
@@ -56,6 +66,10 @@ public abstract class BasePage {
 
     @FindBy(css = ".menu-popup-item-text")
     public List<WebElement> topMenuMoreOptions;
+
+
+    @FindBy(xpath = "//a[@title='Drive']")
+    public WebElement driveModule;
 
     public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
