@@ -1,3 +1,4 @@
+@regression
 @logout
 Feature: As a user, I should be logout
 

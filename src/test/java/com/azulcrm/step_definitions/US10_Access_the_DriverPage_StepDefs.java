@@ -19,6 +19,8 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.azulcrm.pages.BasePage.options_drive_header;
+
 public class US10_Access_the_DriverPage_StepDefs {
     DrivePage drivePage = new DrivePage();
     @Given("users click the Drive module")
@@ -29,7 +31,7 @@ public class US10_Access_the_DriverPage_StepDefs {
 
     @Then("verify the users see folowing 6 options:")
     public void verify_the_users_see_flowing_options(List<String> expectedOptions) {
-        List<String> actualOptions = BrowserUtils.getElementsText(BasePage.options_drive_header);
+        List<String> actualOptions = BrowserUtils.getElementsText(options_drive_header);
         Assert.assertEquals(expectedOptions, actualOptions);
 
 

@@ -1,4 +1,5 @@
 @regression
+@employees_page
 Feature: As a user, I want to access the Employees page.
 
 

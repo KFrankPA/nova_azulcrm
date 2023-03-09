@@ -13,6 +13,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+import static com.azulcrm.pages.BasePage.userBlock;
+
 public class US06_Verification_profile_Options_Displayed {
      LoginPage loginPage = new LoginPage();
     @Given("users are on the homepage")
@@ -23,7 +25,7 @@ public class US06_Verification_profile_Options_Displayed {
     }
     @When("users click the profile name")
     public void users_click_the_profile_name() {
-       BasePage.userBlock.click();
+       userBlock.click();
     }
 
     @Then("verify the users see flowing five options")

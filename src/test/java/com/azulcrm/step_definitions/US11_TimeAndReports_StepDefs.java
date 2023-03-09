@@ -25,7 +25,7 @@ public class US11_TimeAndReports_StepDefs{
     public void enters_valid_username_and_password() {
         loginPage.username.sendKeys(ConfigurationReader.getProperty("hr_user11"));
         loginPage.password.sendKeys(ConfigurationReader.getProperty("hr_password"));
-        loginPage.submit.click();
+        loginPage.logInBtn.click();
     }
 
 

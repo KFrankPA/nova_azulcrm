@@ -1,6 +1,6 @@
-@wip1
+@regression
+@my_profile_page
 Feature: As a user, I want to access my profile page.
-
 
   Background:
     Given the user is on the login page
@@ -15,7 +15,6 @@ Feature: As a user, I want to access my profile page.
       | Tasks         |
       | Calendar      |
       | Conversations |
-
 
     Examples:
       | userType       |
