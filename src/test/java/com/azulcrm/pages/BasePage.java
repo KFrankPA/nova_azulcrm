@@ -93,4 +93,8 @@ public abstract class BasePage {
     @FindBy(xpath="//span[@class='main-buttons-item-text-title']")
     public static List<WebElement> options_drive_header;
 
+
+    @FindBy(xpath = "//div[@id='menu-favorites-settings-btn']")
+    public static WebElement configure_menu;
+
 }
