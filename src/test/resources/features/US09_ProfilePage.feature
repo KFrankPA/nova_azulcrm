@@ -6,7 +6,7 @@ Feature: As a user, I want to access my profile page.
     Given the user is on the login page
 
   Scenario Outline: Verify the users view all options on my profile page
-    Given  the user with "<userType>" enters valid username and password and click the login button
+    Given the "<userType>" is on the home page
 
     When users click the user profile
     Then verify the users see flowing 5 options:
