@@ -1,5 +1,6 @@
 package com.azulcrm.step_definitions;
 
+
 import com.azulcrm.pages.BasePage;
 import com.azulcrm.pages.LoginPage;
 import com.azulcrm.utilities.ConfigurationReader;
@@ -9,7 +10,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class US03_LogOut_StepDefs extends BasePage {
+import static com.azulcrm.pages.BasePage.userBlock;
+
+public class US03_LogOut_StepDefs {
 
 
     LoginPage loginPage = new LoginPage();
@@ -26,7 +29,7 @@ public class US03_LogOut_StepDefs extends BasePage {
         loginPage.username.sendKeys(ConfigurationReader.getProperty("hr_user"));
         loginPage.password.sendKeys(ConfigurationReader.getProperty("hr_password"));
 
-        loginPage.submit.click();
+        loginPage.logInBtn.click();
 
     /*  loginPage.username.sendKeys(ConfigurationReader.getProperty("hr_user2"));
         loginPage.username.sendKeys(ConfigurationReader.getProperty("hr_user3"));
@@ -63,8 +66,8 @@ public class US03_LogOut_StepDefs extends BasePage {
 
     }
     @When("users select the {string} option")
-    public void users_select_the_option(String string) {
-        logOutOpt.click();
+    public void users_select_the_option(String logOutBtn) {
+        BasePage.logOutOpt.click();
 
     }
     @Then("verify the user back to the login page")

@@ -11,7 +11,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class US05_Mobile_App_Options_StepDefs extends BasePage{
+import static com.azulcrm.pages.BasePage.mobileAppOptions;
+
+public class US05_Mobile_App_Options_StepDefs {
 
 
     @Then("verify the users see following 2 mobile app options")

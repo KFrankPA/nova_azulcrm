@@ -1,4 +1,5 @@
-@MyTest
+@regression
+@configure_menu
 Feature:
   As a user, I should be able to configure the menu.
   Acceptance Criteria:

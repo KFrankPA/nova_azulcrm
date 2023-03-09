@@ -13,7 +13,9 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class US06_Verification_profile_Options_Displayed extends BasePage {
+import static com.azulcrm.pages.BasePage.userBlock;
+
+public class US06_Verification_profile_Options_Displayed {
      LoginPage loginPage = new LoginPage();
     @Given("users are on the homepage")
     public void users_are_on_the_homepage() {

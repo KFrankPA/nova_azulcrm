@@ -13,7 +13,9 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class US13_Verification_configure_menu_options extends BasePage {
+import static com.azulcrm.pages.BasePage.configure_menu;
+
+public class US13_Verification_configure_menu_options  {
          LoginPage loginPage= new LoginPage();
     @Given("users are on the Homepage")
     public void users_are_on_the_homepage() {
@@ -24,7 +26,7 @@ public class US13_Verification_configure_menu_options extends BasePage {
     }
     @When("users click the CONFIGURE MENU option")
     public void users_click_the_configure_menu_option() {
-      //Configure_menu.click();
+      configure_menu.click();
 
     }
     @Then("verify the users see flowing six options")

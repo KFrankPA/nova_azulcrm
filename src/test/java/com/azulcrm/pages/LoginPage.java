@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends BasePage{
 
-    public LoginPage(){
+    public LoginPage (){
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -19,7 +19,7 @@ public class LoginPage {
     public WebElement password;
 
     @FindBy(css = "input[value='Log In']")
-    public WebElement submit;
+    public WebElement logInBtn;
 
     @FindBy(xpath="//label[@for='USER_REMEMBER']")
     public WebElement rememberMeText;
@@ -33,7 +33,7 @@ public class LoginPage {
     public void login(String userNameStr, String passwordStr) {
         username.sendKeys(userNameStr);
         password.sendKeys(passwordStr);
-        submit.click();
+        logInBtn.click();
         // verification that we logged
     }
 
