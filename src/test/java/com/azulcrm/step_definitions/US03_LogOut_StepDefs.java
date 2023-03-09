@@ -26,7 +26,7 @@ public class US03_LogOut_StepDefs {
         loginPage.username.sendKeys(ConfigurationReader.getProperty("hr_user"));
         loginPage.password.sendKeys(ConfigurationReader.getProperty("hr_password"));
 
-        loginPage.submit.click();
+        loginPage.logInBtn.click();
 
     /*  loginPage.username.sendKeys(ConfigurationReader.getProperty("hr_user2"));
         loginPage.username.sendKeys(ConfigurationReader.getProperty("hr_user3"));
@@ -63,7 +63,7 @@ public class US03_LogOut_StepDefs {
 
     }
     @When("users select the {string} option")
-    public void users_select_the_option(String string) {
+    public void users_select_the_option(String logOutBtn) {
         BasePage.logOutOpt.click();
 
     }
