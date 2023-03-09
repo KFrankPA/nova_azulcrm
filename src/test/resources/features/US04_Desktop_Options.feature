@@ -1,6 +1,6 @@
-@K
+@regression
+@desktop_download_options
 Feature: As a user, I should be able to see desktop options to download.
-
 
   Background:
     Given  user goes to login page

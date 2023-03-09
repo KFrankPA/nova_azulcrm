@@ -1,5 +1,6 @@
+@regression
+@chat_&_calls
 Feature: As a user, I should be able to access the Chat and Calls module
-
 
   Background:
     Given the user is on the login page
