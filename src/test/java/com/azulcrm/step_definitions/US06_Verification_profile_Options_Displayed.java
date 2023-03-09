@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class US06_Verification_profile_Options_Displayed extends BasePage {
+public class US06_Verification_profile_Options_Displayed {
      LoginPage loginPage = new LoginPage();
     @Given("users are on the homepage")
     public void users_are_on_the_homepage() {
@@ -23,7 +23,7 @@ public class US06_Verification_profile_Options_Displayed extends BasePage {
     }
     @When("users click the profile name")
     public void users_click_the_profile_name() {
-       userBlock.click();
+       BasePage.userBlock.click();
     }
 
     @Then("verify the users see flowing five options")

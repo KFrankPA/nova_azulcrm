@@ -9,12 +9,12 @@ import org.junit.Assert;
 
 import java.util.List;
 
-public class US09_ProfilePage_StepDefs extends BasePage {
+public class US09_ProfilePage_StepDefs  {
     MyProfilePage myProfilePage=new MyProfilePage();
     @When("users click the user profile")
     public void users_click_the_user_profile() {
-       super.bnt_User_Profile.click();
-       super.userProfile_dropdownOption_MyProfile.click();
+        myProfilePage.bnt_User_Profile.click();
+        myProfilePage.userProfile_dropdownOption_MyProfile.click();
     }
     @Then("verify the users see flowing {int} options:")
     public void verify_the_users_see_flowing_options(Integer options, List<String>  expectedOptions) {
