@@ -24,7 +24,7 @@ public class Driver {
 
     private static WebDriver driver;
 
-    public static WebDriver getDriver() {
+    public static WebDriver getDriver()  {
         if (driver == null) {
             if (System.getProperty("driverType") == null) {
                 browser = ConfigurationReader.getProperty("browser");
