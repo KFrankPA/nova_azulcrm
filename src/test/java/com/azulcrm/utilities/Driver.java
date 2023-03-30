@@ -26,10 +26,10 @@ public class Driver {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            if (System.getProperty("BROWSER") == null) {
+            if (System.getProperty("driverType") == null) {
                 browser = ConfigurationReader.getProperty("browser");
             } else {
-                browser = System.getProperty("BROWSER");
+                browser = System.getProperty("driverType");
             }
             System.out.println("Browser: " + browser);
             switch (browser) {
